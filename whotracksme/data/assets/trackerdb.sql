@@ -943,7 +943,7 @@ INSERT INTO "tracker_domains" VALUES('infonline','ioam.de');
 INSERT INTO "tracker_domains" VALUES('google_adservices','adsensecustomsearchads.com');
 INSERT INTO "tracker_domains" VALUES('google_adservices','googleadservices.com');
 INSERT INTO "tracker_domains" VALUES('google_syndication','googlesyndication.com');
-INSERT INTO "tracker_domains" VALUES('amazon_web_services','cloudfront.net');
+INSERT INTO "tracker_domains" VALUES('amazon_cloudfront','cloudfront.net');
 INSERT INTO "tracker_domains" VALUES('amazon_web_services','amazonaws.com');
 INSERT INTO "tracker_domains" VALUES('criteo','criteo.com');
 INSERT INTO "tracker_domains" VALUES('criteo','criteo.net');
@@ -2451,6 +2451,7 @@ INSERT INTO "tracker_domains" VALUES('xvideos_com','xvideos-cdn.com');
 INSERT INTO "tracker_domains" VALUES('pmddby.com','pmddby.com');
 INSERT INTO "tracker_domains" VALUES('vinted','vinted.net');
 INSERT INTO "tracker_domains" VALUES('typeform','typeform.com');
+INSERT INTO "tracker_domains" VALUES('amazon_web_services','amazonwebservices.com');
 CREATE TABLE "trackers" (
 	`id`	TEXT NOT NULL UNIQUE,
 	`name`	TEXT NOT NULL,
@@ -3691,6 +3692,7 @@ INSERT INTO "trackers" VALUES('yieldmo','Yieldmo',NULL,4,'https://www.yieldmo.co
 INSERT INTO "trackers" VALUES('google_photos','Google Photos',NULL,9,NULL,NULL,'google',NULL,NULL);
 INSERT INTO "trackers" VALUES('vinted','Vinted',NULL,8,'https://www.vinted.com/',NULL,NULL,NULL,NULL);
 INSERT INTO "trackers" VALUES('typeform','Typeform',NULL,2,'https://www.typeform.com/',NULL,NULL,NULL,NULL);
+INSERT INTO "trackers" VALUES('amazon_cloudfront','Amazon CloudFront',NULL,10,NULL,NULL,'amazon_associates',NULL,NULL);
 CREATE TABLE urls(
     url TEXT PRIMARY KEY,
     robots_allowed TEXT NULL,
