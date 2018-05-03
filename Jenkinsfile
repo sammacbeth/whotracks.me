@@ -14,6 +14,9 @@ node('docker') {
     def img
 
     stage('Build Docker Image') {
+        print(env.TAG_NAME)
+        print(binding.variables.get("TAG_NAME"))
+        print(env.BRANCH_NAME)
         img = docker.build('whotracksme', '.')
     }
 
